@@ -1,8 +1,10 @@
 {
     "name": "spryker-community/product-management-ai-translator",
     "type": "library",
-    "description": "ProductManagementAiTranslator module",
-    "license": "proprietary",
+    "description": "The ProductManagementAiTranslator module provides product-related AI translation functionality",
+    "keywords": ["spryker", "product-management", "AI", "translations"],
+    "homepage": "https://github.com/spryker-community/product-management-ai-translator",
+    "license": "MIT",
     "require": {
         "php": ">=8.0",
         "spryker-community/ai-translator": "^0.1.0",
