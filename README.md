@@ -37,8 +37,9 @@ $config[KernelConstants::CORE_NAMESPACES] = [
 # config/Shared/config_default.php
 
 use SprykerCommunity\Shared\AiTranslator\AiTranslatorConstants;
+use SprykerCommunity\Shared\OpenAiClient\OpenAiClientConstants;
 
-$config[OpenAiConstants::API_TOKEN] = 'OpenAI API token; // Sets private OpenAI API token
+$config[OpenAiClientConstants::API_TOKEN] = 'OpenAI API token'; // Sets private OpenAI API token
 $config[AiTranslatorConstants::ENABLE_CACHE] = true; // Controls Redis caching for translations
 
 ```
