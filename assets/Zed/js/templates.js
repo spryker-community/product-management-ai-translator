@@ -22,7 +22,6 @@ export const modalTemplates = ()=> {
                         </div>
                     </div>
                     <div class="modal-footer modal-footer">
-                        <button type="button" class="btn btn-outline btn-view js-translate-determinate" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -46,7 +45,6 @@ export const modalTemplates = ()=> {
                     </div>
                     <div class="modal-footer">
                         <div class="modal-actions">
-                            <button type="button" class="btn btn-outline btn-view" data-dismiss="modal">Close</button>
                             <button type="button" class="js-translate-again btn btn-outline btn-view">Try again</button>
                             <button type="button" class="js-translate-apply btn" data-dismiss="modal">Apply</button>
                         </div>
