@@ -79,11 +79,11 @@ const translate = async (payload) => {
 const showTranslator = () => {
     const determinate = document.querySelector('.js-translate-determinate');
 
-    if (!determinate.classList.contains('cancel')) {
+    if (!determinate?.classList.contains('cancel')) {
         $('#modal-translator').modal('show');
     }
 
-    determinate.classList.remove('cancel');
+    determinate?.classList.remove('cancel');
 };
 
 const onTranslateClick = async (event) => {
