@@ -48,9 +48,7 @@ export const modalTemplates = ()=> {
                         <div class="modal-actions">
                             <button type="button" class="btn btn-outline btn-view" data-dismiss="modal">Close</button>
                             <button type="button" class="js-translate-again btn btn-outline btn-view">Try again</button>
-                            <button type="button" class="js-translate-apply btn" data-dismiss="modal">
-                                <span class="fa fa-copy"></span> Copy
-                            </button>
+                            <button type="button" class="js-translate-apply btn" data-dismiss="modal">Apply</button>
                         </div>
                     </div>
                 </div>
