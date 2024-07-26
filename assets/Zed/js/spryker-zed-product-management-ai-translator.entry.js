@@ -158,7 +158,7 @@ const translateInit = () => {
 
     document.querySelector('.js-translate-apply').addEventListener('click', onApply);
 
-    document.querySelector('.js-translate-determinate').addEventListener('click', (event) => {
+    document.querySelector('.js-translate-determinate')?.addEventListener('click', (event) => {
         event.target.classList.add('cancel');
     });
 
