@@ -87,9 +87,14 @@
     .translator,
     .input-group-btn {
         position: absolute;
-        right: 0;
+        right: 14px;
         bottom: 6px;
         z-index: auto;
+    }
+
+    textarea ~ .translator {
+        right: 19px;
+        bottom: 32px;
     }
 
     .input-group-btn {
@@ -111,7 +116,6 @@
         justify-content: center;
         align-items: center;
         font-size: 12px;
-        border: 1px solid transparent;
 
         &:focus {
             box-shadow: none !important;
@@ -125,7 +129,7 @@
     }
 
     .translator {
-        right: 36px;
+        right: 47px;
 
         &:hover .translator__drop {
             opacity: 1;
