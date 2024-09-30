@@ -87,14 +87,19 @@
     .translator,
     .input-group-btn {
         position: absolute;
-        right: 14px;
+        right: 0;
         bottom: 6px;
         z-index: auto;
     }
 
-    textarea ~ .translator {
-        right: 19px;
-        bottom: 32px;
+    .has-scrollbar {
+        & ~ .input-group-btn {
+            right: 17px;
+        }
+
+        & ~ .translator {
+            right: 53px;
+        }
     }
 
     .input-group-btn {
