@@ -11,7 +11,35 @@ $(document).ready(function () {
     appendModals();
     textAreaCopyIcon();
     translateInit();
+    initTextareaAddons();
 });
+
+const initTextareaAddons = () => {
+    const textareas = Array.from(document.querySelectorAll('textarea'));
+    textareas.map(textarea => {
+        textarea.addEventListener('input', (event) => {
+            handleTextareaChange(textarea);
+        })
+
+        new ResizeObserver(() => {
+            handleTextareaChange(textarea);
+        }).observe(textarea);
+    });
+}
+
+const handleTextareaChange = (textarea) => {
+    if(textarea.clientHeight < textarea.scrollHeight) {
+        handleTextareaClassname(textarea, true);
+        return;
+    }
+
+    handleTextareaClassname(textarea, false);
+}
+
+const handleTextareaClassname = (textarea, setClassname) => {
+    const classname = 'has-scrollbar';
+    setClassname ? textarea.classList.add(classname) : textarea.classList.remove(classname);
+}
 
 const getLocales = () => {
     languageindicators.forEach(indicator => {
